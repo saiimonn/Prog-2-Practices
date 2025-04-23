@@ -22,6 +22,13 @@ int searchNode(node *head, int k) {
     return -1;
 }
 
+void printList(node *head) {
+    node *ptr;
+    printf("HEAD ->");
+    for(ptr = head; ptr != NULL; ptr = ptr->next) printf(" %d -> ", ptr->data);
+    printf("NULL\n");
+}
+
 int main() {
     node *head = NULL;
 
@@ -33,6 +40,8 @@ int main() {
     insertStart(&head, 10);
     insertStart(&head, 10);
 
+    printList(head);
+
     int val;
     printf("Enter the value you wish to find: ");
     scanf("%d", &val);
@@ -42,3 +51,15 @@ int main() {
     if(result != -1) printf("%d is found at index %d\n", val, result);
     else printf("%d is not found in the list.\n", val);
 }
+
+/*
+Sample outputs:
+
+HEAD -> 10 ->  10 ->  30 ->  20 ->  80 ->  40 ->  90 -> NULL
+Enter the value you wish to find: 30
+30 is found at index 2
+
+HEAD -> 10 ->  10 ->  30 ->  20 ->  80 ->  40 ->  90 -> NULL
+Enter the value you wish to find: 70
+70 is not found in the list.
+*/
