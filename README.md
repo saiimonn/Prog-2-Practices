@@ -1,14 +1,10 @@
-# Linked List Practice – Programming 2
+# Programming 02 Practice Repository
 
-This repo contains practice exercises for my prog 2 class, focusing on the different operations and implementations of **linked lists** and **structs** in C language.
+This repository contains practice problems, study area problems, and activities in codeChum. Along with specific practices that cater to mastering the different data structures, mainly **Linked Lists** and **ArrayLists**
 
-Exercises include: 
+### Exercises include: 
 - Struct arrays
 - Nested structs
-- Insertion of nodes
-- Deletion of nodes
-- Searching nodes
-- Sorting of linked list
+- Singly linked list operations(insertion, deletion, sorting, etc.)
+- Arraylist operations(insertion, deletion, displaying, etc.)
 - Some leetcode questions that I've answered (linked lists)
-
-This is a practice repo to compile all of the exercises I have done across all my devices. Each file contains sample outputs and some comments that explains the logic behind the different implementation of operations.
